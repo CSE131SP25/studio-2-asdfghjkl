@@ -37,7 +37,7 @@ public class Ruin {
             if (startAmount == 0 || startAmount == winLimit || run == totalSimulations) {
                 System.out.println("Losses: " + (totalSimulations - wins) + " Simulations: " + (run));
                 System.out.println("Ruin Rate from Simulation: " + (totalSimulations - wins) / totalSimulations + " Expected Ruin Rate: " + expectedRuin);
-                break;
+                i = (int) totalSimulations;
             }
         }
     }
